@@ -1,6 +1,7 @@
 name: Python version check
 on: push
 
+
 jobs:
     python-version-check-on-windows:
         name: python version check
