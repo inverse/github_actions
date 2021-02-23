@@ -4,26 +4,34 @@ on: push
 
 jobs:
     python-version-check-on-windows:
-        name: python version check
+        name: python version check windws
         runs-on: windows-latest
         steps:
             - name: ver check
               run: python --version
 
     python-version-check-on-linux:
-        name: python version check
+        name: python version check linux
         runs-on: ubuntu-latest
         steps:
-            - name: ver check
+            - name: ver check python
               run: python --version
-            - name: which
+            - name: which python
               run: which python
+            - name: ver check python3
+              run: python3 --version
+            - name: which python3
+              run: which python3
 
     python-version-check-on-macos:
-        name: python version check
+        name: python version check macos
         runs-on: macos-latest
         steps:
-            - name: ver check
+            - name: ver check python
               run: python --version
-            - name: which
+            - name: which python
               run: which python
+            - name: ver check python3
+              run: python3 --version
+            - name: which python3
+              run: which python3
