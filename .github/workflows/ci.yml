@@ -15,7 +15,8 @@ jobs:
         steps:
             - name: ver check
               run: python --version
-
+            - name: which
+              run: which python
 
     python-version-check-on-macos:
         name: python version check
@@ -23,3 +24,5 @@ jobs:
         steps:
             - name: ver check
               run: python --version
+            - name: which
+              run: which python
